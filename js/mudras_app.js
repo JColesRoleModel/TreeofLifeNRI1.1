@@ -1,12 +1,12 @@
 // Mudra Generator App
 // Random mudra sequences with simple timing + audio cues.
-// Uses numeric filenames: 1.svg, 2.svg, ... up to TOTAL_MUDRAS in assets/mudras/.
+// Uses numeric filenames: 1.webp, 2.webp, ... up to TOTAL_MUDRAS in assets/mudras/.
 
 const IMAGE_BASE_PATH = "assets/mudras/";
-const TOTAL_MUDRAS = 45; // we have 1.svg ... 45.svg (change if you have fewer)
+const TOTAL_MUDRAS = 45; // we have 1.webp ... 45.webp (change if you have fewer)
 
-// Build an array: ["1.svg", "2.svg", ..., "45.svg"]
-const MUDRA_FILES = Array.from({ length: TOTAL_MUDRAS }, (_, i) => `${i + 1}.svg`);
+// Build an array: ["1.webp", "2.webp", ..., "45.webp"]
+const MUDRA_FILES = Array.from({ length: TOTAL_MUDRAS }, (_, i) => `${i + 1}.webp`);
 
 // STATE
 let mudraSequence = [];
@@ -25,11 +25,10 @@ let timerId = null;
 // Lazy loading
 let lazyLoader = null;
 
-// Audio + progress bar
+// Audio + progress bars
 let audioEnabled = true;
 let audioEl = null;
-let bar = null;
-let barDirectionForward = true;
+let phaseBar = null;
 
 // Helpers
 function qs(sel) { return document.querySelector(sel); }
@@ -90,22 +89,17 @@ function setupPlayerUI() {
   updateMudraUI();
 }
 
-// Progress bar
-function animateProgressBarForPhase(seconds) {
-  if (!bar) return;
-  bar.style.transition = `width ${seconds}s linear`;
-  if (barDirectionForward) {
-    bar.style.width = "100%";
-  } else {
-    bar.style.width = "0%";
-  }
-  barDirectionForward = !barDirectionForward;
+// Progress bars
+// Whole session = every hold, plus a rest between mudras (none after the last one)
+function sessionTotalSeconds() {
+  const n = mudraSequence.length;
+  return n * prefs.secondsPerMudra + Math.max(0, n - 1) * prefs.restBetween;
 }
 
-function resetProgressBarInstant() {
-  if (!bar) return;
-  bar.style.transition = "none";
-  bar.style.width = barDirectionForward ? "0%" : "100%";
+function resetProgressBar() {
+  if (!phaseBar) return;
+  phaseBar.reset();
+  phaseBar.setTotal(sessionTotalSeconds());
 }
 
 // Start a fresh session (does not auto-start the timer)
@@ -116,7 +110,7 @@ function prepareSession() {
   currentIndex = 0;
   currentPhase = "idle";
   secondsRemaining = 0;
-  resetProgressBarInstant();
+  resetProgressBar();
   updateMudraUI();
 
   const phaseLabel = qs("#phase-label");
@@ -140,17 +134,14 @@ function startSession() {
   if (playBtn) playBtn.textContent = "Pause";
   currentPhase = "move";
   secondsRemaining = prefs.secondsPerMudra;
-  barDirectionForward = true;
-  resetProgressBarInstant();
+  resetProgressBar();
 
   // Start time tracking
   if (window.timeTracker) {
     window.timeTracker.startSession('Mudras', 'Random');
   }
 
-  requestAnimationFrame(() => {
-    animateProgressBarForPhase(prefs.secondsPerMudra);
-  });
+  if (phaseBar) phaseBar.startPhase("move", prefs.secondsPerMudra);
 
   runTimerTick();
 }
@@ -183,11 +174,12 @@ function handlePhaseComplete() {
 
   playDing();
 
-  if (currentPhase === "move" && prefs.restBetween > 0) {
+  const isLastMudra = currentIndex >= mudraSequence.length - 1;
+  if (currentPhase === "move" && prefs.restBetween > 0 && !isLastMudra) {
     // Go into rest
     currentPhase = "rest";
     secondsRemaining = prefs.restBetween;
-    if (bar) bar.style.transition = "none";
+    if (phaseBar) phaseBar.startPhase("rest", prefs.restBetween);
     updatePhaseLabel();
     runTimerTick();
     return;
@@ -203,12 +195,7 @@ function handlePhaseComplete() {
   currentPhase = "move";
   secondsRemaining = prefs.secondsPerMudra;
   updateMudraUI();
-  barDirectionForward = !barDirectionForward;
-  resetProgressBarInstant();
-
-  requestAnimationFrame(() => {
-    animateProgressBarForPhase(prefs.secondsPerMudra);
-  });
+  if (phaseBar) phaseBar.startPhase("move", prefs.secondsPerMudra);
 
   runTimerTick();
 }
@@ -219,6 +206,9 @@ function finishSession() {
     clearInterval(timerId);
     timerId = null;
   }
+  currentIndex = mudraSequence.length - 1;
+  currentPhase = "idle";
+  if (phaseBar) phaseBar.finish();
 
   const playBtn = qs("#btn-play-pause");
   if (playBtn) playBtn.textContent = "Restart";
@@ -305,19 +295,12 @@ function togglePlayPause() {
       timerId = null;
     }
     if (playBtn) playBtn.textContent = "Resume";
-    if (bar) bar.style.transition = "none";
+    if (phaseBar) phaseBar.pause();
   } else {
     // Resume
     isRunning = true;
     if (playBtn) playBtn.textContent = "Pause";
-
-    if (currentPhase === "move") {
-      barDirectionForward = !barDirectionForward;
-      resetProgressBarInstant();
-      requestAnimationFrame(() => {
-        animateProgressBarForPhase(secondsRemaining);
-      });
-    }
+    if (phaseBar) phaseBar.resume();
 
     runTimerTick();
   }
@@ -372,7 +355,7 @@ function initMudrasApp() {
   lazyLoader = new LazyImageLoader({ rootMargin: '100px' });
 
   audioEl = document.getElementById("audio-ding");
-  bar = document.getElementById("prog");
+  phaseBar = new PhaseBar(document.getElementById("prog"));
 
   const audioToggle = qs("#mudra-audio-toggle");
   if (audioToggle) {
@@ -414,6 +397,7 @@ function initMudrasApp() {
         timerId = null;
       }
       currentPhase = "idle";
+      if (phaseBar) phaseBar.reset();
       const phaseLabel = qs("#phase-label");
       if (phaseLabel) phaseLabel.textContent = "Ready";
       switchScreen("screen-config");

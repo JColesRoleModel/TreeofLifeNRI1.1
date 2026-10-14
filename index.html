@@ -12,9 +12,16 @@
   <link rel="stylesheet" href="css/legs_style.css">
   <link rel="stylesheet" href="css/footer-nav.css">
   <!-- Favicon for site icon -->
-  <link rel="icon" type="image/png" href="assets/logo/tolnrilogo.png">
-  <!-- iPhone / iPad home screen icon -->
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/logo/tolnrilogo.png">
+  <link rel="icon" type="image/png" href="assets/logo/tolnrilogo.webp">
+  <!-- Installable app (PWA) -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#0F0F0F">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="ToL NRI">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/logo/icon-180.png">
+  <script>if ('serviceWorker' in navigator) navigator.serviceWorker.register('./sw.js');</script>
 </head>
 
 <body>
@@ -27,7 +34,7 @@
         </div>
 
         <a href="index.html" class="brand-logo-link">
-          <img src="assets/logo/tolnrilogo.png" alt="Tree of Life logo" class="brand-logo-image">
+          <img src="assets/logo/tolnrilogo.webp" alt="Tree of Life logo" class="brand-logo-image">
         </a>
 
         <div class="brand-text">
@@ -110,10 +117,10 @@
               <div class="routine-name">Breathwork Toolkit</div>
             </div>
             <div class="thumb-strip">
-              <div class="thumb"><img data-src="assets/breath/solar.png" alt="Solar pattern"></div>
-              <div class="thumb"><img data-src="assets/breath/lunar.png" alt="Lunar pattern"></div>
-              <div class="thumb"><img data-src="assets/breath/alternate.png" alt="Alternate pattern"></div>
-              <div class="thumb"><img data-src="assets/breath/cyclical.png" alt="Cyclical pattern"></div>
+              <div class="thumb"><img data-src="assets/breath/solar.webp" alt="Solar pattern"></div>
+              <div class="thumb"><img data-src="assets/breath/lunar.webp" alt="Lunar pattern"></div>
+              <div class="thumb"><img data-src="assets/breath/alternate.webp" alt="Alternate pattern"></div>
+              <div class="thumb"><img data-src="assets/breath/cyclical.webp" alt="Cyclical pattern"></div>
             </div>
           </div>
 
@@ -174,7 +181,7 @@
                 <img src="assets/social/youtube.png" alt="YouTube" width="28" height="28">
               </a>
               <a href="https://www.instagram.com" target="_blank" rel="noopener" title="Instagram">
-                <img src="assets/social/instagram.png" alt="Instagram" width="28" height="28">
+                <img src="assets/social/instagram.webp" alt="Instagram" width="28" height="28">
               </a>
               <a href="https://www.tiktok.com" target="_blank" rel="noopener" title="TikTok">
                 <img src="assets/social/tiktok.png" alt="TikTok" width="28" height="28">
@@ -248,7 +255,7 @@
           const d = document.createElement('div');
           d.className = 'thumb';
           const img = document.createElement('img');
-          img.dataset.src = 'assets/mudras/' + i + '.svg';
+          img.dataset.src = 'assets/mudras/' + i + '.webp';
           img.alt = 'Mudra ' + i;
           lazyLoader.observe(img);
           d.appendChild(img);
@@ -285,10 +292,10 @@
       const lowerStrip = document.querySelector('.lower-icons');
       if (lowerStrip) {
         const lowerRoutines = [
-          { key: 'FEET', file: '1_FEET_MIDCROSSRIGHT_D_IMG.svg', alt: 'Feet' },
-          { key: 'GROUNDING', file: '1_GROUNDING_FORWARD_D_IMG.svg', alt: 'Grounding' },
-          { key: 'HIPS1', file: '1_HIPS1_LEFTFRONTIN_D_IMG.svg', alt: 'Hips I' },
-          { key: 'HIPS2', file: '1_HIPS2_PLANKOPPOSITELEFTFRONT_D_IMG.svg', alt: 'Hips II' }
+          { key: 'FEET', file: '1_FEET_MIDCROSSRIGHT_D_IMG.webp', alt: 'Feet' },
+          { key: 'GROUNDING', file: '1_GROUNDING_FORWARD_D_IMG.webp', alt: 'Grounding' },
+          { key: 'HIPS1', file: '1_HIPS1_LEFTFRONTIN_D_IMG.webp', alt: 'Hips I' },
+          { key: 'HIPS2', file: '1_HIPS2_PLANKOPPOSITELEFTFRONT_D_IMG.webp', alt: 'Hips II' }
         ];
         lowerStrip.innerHTML = '';
         lowerRoutines.forEach(r => {
@@ -308,24 +315,24 @@
       const upperStrip = document.querySelector('.upper-icons');
       if (upperStrip) {
         const UPPER_ROUTINES = [
-          { key: 'PALMSTOGETHER', label: 'Palms Together', file: '2_CLASPMID_LEFT_D_IMG.svg' },
-          { key: 'PALMIN', label: 'Palm In', file: '2_PALMIN_UP_D_IMG.svg' },
-          { key: 'PALMOPEN', label: 'Palm Open', file: '2_PALMOPEN_UP_D_IMG.svg' },
-          { key: 'PALMOUT', label: 'Palm Out', file: '2_PALMOUT_DOWN_D_IMG.svg' },
-          { key: 'PALMCLOSED', label: 'Palm Closed', file: '2_PALMCLOSED_UP_D_IMG.svg' },
-          { key: 'HEARTOPEN', label: 'Heart Open', file: '2_HEARTOPEN_RIGHT_D_IMG.svg' },
-          { key: 'HEARTPROTECTED', label: 'Heart Protected', file: '2_HEARTPROTECTED_RIGHT_D_IMG.svg' },
-          { key: 'SCAPULA', label: 'Scapula', file: '2_SCAPULA_RIGHT_D_IMG.svg' },
-          { key: 'CROSSOPENBACKWARD', label: 'Cross Back', file: '2_CROSSPALM_BACKWARD_0_IMG.svg' },
-          { key: 'CROSSOPENDOWN', label: 'Cross Down', file: '2_CROSSPALM_DOWN_0_IMG.svg' },
-          { key: 'CROSSOPENFORWARD', label: 'Cross Forward', file: '2_CROSSPALM_FORWARD_0_IMG.svg' },
-          { key: 'CROSSOPENREVERSE', label: 'Cross Reverse', file: '2_CROSSPALM_REVERSE_0_IMG.svg' },
-          { key: 'CROSSOPENUP', label: 'Cross Up', file: '2_CROSSPALM_UP_0_IMG.svg' },
-          { key: 'CROSSCLOSEDBACKWARD', label: 'Fists Back', file: '2_CROSSFIST_BACKWARD_0_IMG.svg' },
-          { key: 'CROSSCLOSEDDOWN', label: 'Fists Down', file: '2_CROSSFIST_DOWN_0_IMG.svg' },
-          { key: 'CROSSCLOSEDFORWARD', label: 'Fists Forward', file: '2_CROSSFIST_FORWARD_0_IMG.svg' },
-          { key: 'CROSSCLOSEDREVERSE', label: 'Fists Reverse', file: '2_CROSSFIST_REVERSE_0_IMG.svg' },
-          { key: 'CROSSCLOSEDUP', label: 'Fists Up', file: '2_CROSSFIST_UP_0_IMG.svg' }
+          { key: 'PALMSTOGETHER', label: 'Palms Together', file: '2_CLASPMID_LEFT_D_IMG.webp' },
+          { key: 'PALMIN', label: 'Palm In', file: '2_PALMIN_UP_D_IMG.webp' },
+          { key: 'PALMOPEN', label: 'Palm Open', file: '2_PALMOPEN_UP_D_IMG.webp' },
+          { key: 'PALMOUT', label: 'Palm Out', file: '2_PALMOUT_DOWN_D_IMG.webp' },
+          { key: 'PALMCLOSED', label: 'Palm Closed', file: '2_PALMCLOSED_UP_D_IMG.webp' },
+          { key: 'HEARTOPEN', label: 'Heart Open', file: '2_HEARTOPEN_RIGHT_D_IMG.webp' },
+          { key: 'HEARTPROTECTED', label: 'Heart Protected', file: '2_HEARTPROTECTED_RIGHT_D_IMG.webp' },
+          { key: 'SCAPULA', label: 'Scapula', file: '2_SCAPULA_RIGHT_D_IMG.webp' },
+          { key: 'CROSSOPENBACKWARD', label: 'Cross Back', file: '2_CROSSPALM_BACKWARD_0_IMG.webp' },
+          { key: 'CROSSOPENDOWN', label: 'Cross Down', file: '2_CROSSPALM_DOWN_0_IMG.webp' },
+          { key: 'CROSSOPENFORWARD', label: 'Cross Forward', file: '2_CROSSPALM_FORWARD_0_IMG.webp' },
+          { key: 'CROSSOPENREVERSE', label: 'Cross Reverse', file: '2_CROSSPALM_REVERSE_0_IMG.webp' },
+          { key: 'CROSSOPENUP', label: 'Cross Up', file: '2_CROSSPALM_UP_0_IMG.webp' },
+          { key: 'CROSSCLOSEDBACKWARD', label: 'Fists Back', file: '2_CROSSFIST_BACKWARD_0_IMG.webp' },
+          { key: 'CROSSCLOSEDDOWN', label: 'Fists Down', file: '2_CROSSFIST_DOWN_0_IMG.webp' },
+          { key: 'CROSSCLOSEDFORWARD', label: 'Fists Forward', file: '2_CROSSFIST_FORWARD_0_IMG.webp' },
+          { key: 'CROSSCLOSEDREVERSE', label: 'Fists Reverse', file: '2_CROSSFIST_REVERSE_0_IMG.webp' },
+          { key: 'CROSSCLOSEDUP', label: 'Fists Up', file: '2_CROSSFIST_UP_0_IMG.webp' }
         ];
 
         upperStrip.innerHTML = '';
@@ -346,13 +353,13 @@
       const headStrip = document.querySelector('.head-icons');
       if (headStrip) {
         const HEAD_ROUTINES = [
-          { key: 'CHINBOTTOM', label: 'Chin Bottom', file: '3_CHINBOTTOM_0_D_IMG.svg' },
-          { key: 'CHINTOP', label: 'Chin Top', file: '3_CHINTOP_0_D_IMG.svg' },
-          { key: 'LION', label: 'Lion', file: '3_LION_0_D_IMG.svg' },
-          { key: 'LIONLEFT', label: 'Lion Left', file: '3_LIONLEFT_0_D_IMG.svg' },
-          { key: 'LIONRIGHT', label: 'Lion Right', file: '3_LIONRIGHT_0_D_IMG.svg' },
-          { key: 'NOSE', label: 'Nose', file: '3_OPENNOSE_OPENMOUTH_D_IMG.svg' },
-          { key: 'PULL', label: 'Pulls', file: '3_PULLTOP_R_D_IMG.svg' }
+          { key: 'CHINBOTTOM', label: 'Chin Bottom', file: '3_CHINBOTTOM_0_D_IMG.webp' },
+          { key: 'CHINTOP', label: 'Chin Top', file: '3_CHINTOP_0_D_IMG.webp' },
+          { key: 'LION', label: 'Lion', file: '3_LION_0_D_IMG.webp' },
+          { key: 'LIONLEFT', label: 'Lion Left', file: '3_LIONLEFT_0_D_IMG.webp' },
+          { key: 'LIONRIGHT', label: 'Lion Right', file: '3_LIONRIGHT_0_D_IMG.webp' },
+          { key: 'NOSE', label: 'Nose', file: '3_OPENNOSE_OPENMOUTH_D_IMG.webp' },
+          { key: 'PULL', label: 'Pulls', file: '3_PULLTOP_R_D_IMG.webp' }
         ];
 
         headStrip.innerHTML = '';
@@ -463,8 +470,6 @@
       updateHomeStats();
     });
   </script>
-  <script src="js/time-tracker.js"></script>
-  <script src="js/time-stats-ui.js"></script>
   <script src="js/menu.js"></script>
 </body>
 

@@ -16,143 +16,143 @@ const IMAGE_BASE_PATH = "InnervationSVGs/";
 const ROUTINES = {
   // Palms together (clasp) – renamed for clarity
   PALMSTOGETHER: [
-    { file: "2_CLASPMID_LEFT_D_IMG.svg", order: 1 },
-    { file: "2_CLASPMID_RIGHT_D_IMG.svg", order: 4 },
-    { file: "2_CLASPUP_LEFT_D_IMG.svg", order: 3 },
-    { file: "2_CLASPUP_RIGHT_D_IMG.svg", order: 6 },
-    { file: "2_CLASPDOWN_LEFT_D_IMG.svg", order: 2 },
-    { file: "2_CLASPDOWN_RIGHT_D_IMG.svg", order: 5 }
+    { file: "2_CLASPMID_LEFT_D_IMG.webp", order: 1 },
+    { file: "2_CLASPMID_RIGHT_D_IMG.webp", order: 4 },
+    { file: "2_CLASPUP_LEFT_D_IMG.webp", order: 3 },
+    { file: "2_CLASPUP_RIGHT_D_IMG.webp", order: 6 },
+    { file: "2_CLASPDOWN_LEFT_D_IMG.webp", order: 2 },
+    { file: "2_CLASPDOWN_RIGHT_D_IMG.webp", order: 5 }
   ],
   PALMIN: [
-    { file: "2_PALMIN_UP_D_IMG.svg", order: 1 },
-    { file: "2_PALMIN_IN_D_IMG.svg", order: 2 },
-    { file: "2_PALMIN_DOWN_D_IMG.svg", order: 3 },
-    { file: "2_PALMIN_OUT_D_IMG.svg", order: 4 }
+    { file: "2_PALMIN_UP_D_IMG.webp", order: 1 },
+    { file: "2_PALMIN_IN_D_IMG.webp", order: 2 },
+    { file: "2_PALMIN_DOWN_D_IMG.webp", order: 3 },
+    { file: "2_PALMIN_OUT_D_IMG.webp", order: 4 }
   ],
   PALMOPEN: [
-    { file: "2_PALMOPEN_UP_D_IMG.svg", order: 1 },
-    { file: "2_PALMOPEN_IN_D_IMG.svg", order: 2 },
-    { file: "2_PALMOPEN_DOWN_D_IMG.svg", order: 3 },
-    { file: "2_PALMOPEN_OUT_D_IMG.svg", order: 4 }
+    { file: "2_PALMOPEN_UP_D_IMG.webp", order: 1 },
+    { file: "2_PALMOPEN_IN_D_IMG.webp", order: 2 },
+    { file: "2_PALMOPEN_DOWN_D_IMG.webp", order: 3 },
+    { file: "2_PALMOPEN_OUT_D_IMG.webp", order: 4 }
   ],
   PALMOUT: [
-    { file: "2_PALMOUT_DOWN_D_IMG.svg", order: 1 },
-    { file: "2_PALMOUT_OUT_D_IMG.svg", order: 2 },
-    { file: "2_PALMOUT_UP_D_IMG.svg", order: 3 },
-    { file: "2_PALMOUT_IN_D_IMG.svg", order: 4 }
+    { file: "2_PALMOUT_DOWN_D_IMG.webp", order: 1 },
+    { file: "2_PALMOUT_OUT_D_IMG.webp", order: 2 },
+    { file: "2_PALMOUT_UP_D_IMG.webp", order: 3 },
+    { file: "2_PALMOUT_IN_D_IMG.webp", order: 4 }
   ],
   PALMCLOSED: [
-    { file: "2_PALMCLOSED_UP_D_IMG.svg", order: 1 },
-    { file: "2_PALMCLOSED_IN_D_IMG.svg", order: 2 },
-    { file: "2_PALMCLOSED_DOWN_D_IMG.svg", order: 3 },
-    { file: "2_PALMCLOSED_OUT_D_IMG.svg", order: 4 }
+    { file: "2_PALMCLOSED_UP_D_IMG.webp", order: 1 },
+    { file: "2_PALMCLOSED_IN_D_IMG.webp", order: 2 },
+    { file: "2_PALMCLOSED_DOWN_D_IMG.webp", order: 3 },
+    { file: "2_PALMCLOSED_OUT_D_IMG.webp", order: 4 }
   ],
   HEARTOPEN: [
-    { file: "2_HEARTOPEN_RIGHT_D_IMG.svg", order: 1 },
-    { file: "2_HEARTOPEN_LEFT_D_IMG.svg", order: 2 },
-    { file: "2_HEARTOPEN_BOTH_D_IMG.svg", order: 3 }
+    { file: "2_HEARTOPEN_RIGHT_D_IMG.webp", order: 1 },
+    { file: "2_HEARTOPEN_LEFT_D_IMG.webp", order: 2 },
+    { file: "2_HEARTOPEN_BOTH_D_IMG.webp", order: 3 }
   ],
   HEARTPROTECTED: [
-    { file: "2_HEARTPROTECTED_RIGHT_D_IMG.svg", order: 1 },
-    { file: "2_HEARTPROTECTED_LEFT_D_IMG.svg", order: 2 },
-    { file: "2_HEARTPROTECTED_BOTH_D_IMG.svg", order: 3 }
+    { file: "2_HEARTPROTECTED_RIGHT_D_IMG.webp", order: 1 },
+    { file: "2_HEARTPROTECTED_LEFT_D_IMG.webp", order: 2 },
+    { file: "2_HEARTPROTECTED_BOTH_D_IMG.webp", order: 3 }
   ],
   SCAPULA: [
-    { file: "2_SCAPULA_RIGHT_D_IMG.svg", order: 1 },
-    { file: "2_SCAPULA_LEFT_D_IMG.svg", order: 2 },
-    { file: "2_SCAPULA_BOTH_D_IMG.svg", order: 3 }
+    { file: "2_SCAPULA_RIGHT_D_IMG.webp", order: 1 },
+    { file: "2_SCAPULA_LEFT_D_IMG.webp", order: 2 },
+    { file: "2_SCAPULA_BOTH_D_IMG.webp", order: 3 }
   ],
   // Cross – Open Palm sequences (five directions)
   CROSSOPENBACKWARD: [
-    { file: "2_CROSSPALM_BACKWARD_0_IMG.svg", order: 1 },
-    { file: "2_CROSSPALM_BACKWARD_45L_IMG.svg", order: 2 },
-    { file: "2_CROSSPALM_BACKWARD_90L_IMG.svg", order: 3 },
-    { file: "2_CROSSPALM_BACKWARD_135L_IMG.svg", order: 4 },
-    { file: "2_CROSSPALM_BACKWARD_45R_IMG.svg", order: 5 },
-    { file: "2_CROSSPALM_BACKWARD_90R_IMG.svg", order: 6 },
-    { file: "2_CROSSPALM_BACKWARD_135R_IMG.svg", order: 7 }
+    { file: "2_CROSSPALM_BACKWARD_0_IMG.webp", order: 1 },
+    { file: "2_CROSSPALM_BACKWARD_45L_IMG.webp", order: 2 },
+    { file: "2_CROSSPALM_BACKWARD_90L_IMG.webp", order: 3 },
+    { file: "2_CROSSPALM_BACKWARD_135L_IMG.webp", order: 4 },
+    { file: "2_CROSSPALM_BACKWARD_45R_IMG.webp", order: 5 },
+    { file: "2_CROSSPALM_BACKWARD_90R_IMG.webp", order: 6 },
+    { file: "2_CROSSPALM_BACKWARD_135R_IMG.webp", order: 7 }
   ],
   CROSSOPENDOWN: [
-    { file: "2_CROSSPALM_DOWN_0_IMG.svg", order: 1 },
-    { file: "2_CROSSPALM_DOWN_45L_IMG.svg", order: 2 },
-    { file: "2_CROSSPALM_DOWN_90L_IMG.svg", order: 3 },
-    { file: "2_CROSSPALM_DOWN_135L_IMG.svg", order: 4 },
-    { file: "2_CROSSPALM_DOWN_45R_IMG.svg", order: 5 },
-    { file: "2_CROSSPALM_DOWN_90R_IMG.svg", order: 6 },
-    { file: "2_CROSSPALM_DOWN_135R_IMG.svg", order: 7 }
+    { file: "2_CROSSPALM_DOWN_0_IMG.webp", order: 1 },
+    { file: "2_CROSSPALM_DOWN_45L_IMG.webp", order: 2 },
+    { file: "2_CROSSPALM_DOWN_90L_IMG.webp", order: 3 },
+    { file: "2_CROSSPALM_DOWN_135L_IMG.webp", order: 4 },
+    { file: "2_CROSSPALM_DOWN_45R_IMG.webp", order: 5 },
+    { file: "2_CROSSPALM_DOWN_90R_IMG.webp", order: 6 },
+    { file: "2_CROSSPALM_DOWN_135R_IMG.webp", order: 7 }
   ],
   CROSSOPENFORWARD: [
-    { file: "2_CROSSPALM_FORWARD_0_IMG.svg", order: 1 },
-    { file: "2_CROSSPALM_FORWARD_45L_IMG.svg", order: 2 },
-    { file: "2_CROSSPALM_FORWARD_90L_IMG.svg", order: 3 },
-    { file: "2_CROSSPALM_FORWARD_135L_IMG.svg", order: 4 },
-    { file: "2_CROSSPALM_FORWARD_45R_IMG.svg", order: 5 },
-    { file: "2_CROSSPALM_FORWARD_90R_IMG.svg", order: 6 },
-    { file: "2_CROSSPALM_FORWARD_135R_IMG.svg", order: 7 }
+    { file: "2_CROSSPALM_FORWARD_0_IMG.webp", order: 1 },
+    { file: "2_CROSSPALM_FORWARD_45L_IMG.webp", order: 2 },
+    { file: "2_CROSSPALM_FORWARD_90L_IMG.webp", order: 3 },
+    { file: "2_CROSSPALM_FORWARD_135L_IMG.webp", order: 4 },
+    { file: "2_CROSSPALM_FORWARD_45R_IMG.webp", order: 5 },
+    { file: "2_CROSSPALM_FORWARD_90R_IMG.webp", order: 6 },
+    { file: "2_CROSSPALM_FORWARD_135R_IMG.webp", order: 7 }
   ],
   CROSSOPENREVERSE: [
-    { file: "2_CROSSPALM_REVERSE_0_IMG.svg", order: 1 },
-    { file: "2_CROSSPALM_REVERSE_45L_IMG.svg", order: 2 },
-    { file: "2_CROSSPALM_REVERSE_90L_IMG.svg", order: 3 },
-    { file: "2_CROSSPALM_REVERSE_135L_IMG.svg", order: 4 },
-    { file: "2_CROSSPALM_REVERSE_45R_IMG.svg", order: 5 },
-    { file: "2_CROSSPALM_REVERSE_90R_IMG.svg", order: 6 },
-    { file: "2_CROSSPALM_REVERSE_135R_IMG.svg", order: 7 }
+    { file: "2_CROSSPALM_REVERSE_0_IMG.webp", order: 1 },
+    { file: "2_CROSSPALM_REVERSE_45L_IMG.webp", order: 2 },
+    { file: "2_CROSSPALM_REVERSE_90L_IMG.webp", order: 3 },
+    { file: "2_CROSSPALM_REVERSE_135L_IMG.webp", order: 4 },
+    { file: "2_CROSSPALM_REVERSE_45R_IMG.webp", order: 5 },
+    { file: "2_CROSSPALM_REVERSE_90R_IMG.webp", order: 6 },
+    { file: "2_CROSSPALM_REVERSE_135R_IMG.webp", order: 7 }
   ],
   CROSSOPENUP: [
-    { file: "2_CROSSPALM_UP_0_IMG.svg", order: 1 },
-    { file: "2_CROSSPALM_UP_45L_IMG.svg", order: 2 },
-    { file: "2_CROSSPALM_UP_90L_IMG.svg", order: 3 },
-    { file: "2_CROSSPALM_UP_135L_IMG.svg", order: 4 },
-    { file: "2_CROSSPALM_UP_45R_IMG.svg", order: 5 },
-    { file: "2_CROSSPALM_UP_90R_IMG.svg", order: 6 },
-    { file: "2_CROSSPALM_UP_135R_IMG.svg", order: 7 }
+    { file: "2_CROSSPALM_UP_0_IMG.webp", order: 1 },
+    { file: "2_CROSSPALM_UP_45L_IMG.webp", order: 2 },
+    { file: "2_CROSSPALM_UP_90L_IMG.webp", order: 3 },
+    { file: "2_CROSSPALM_UP_135L_IMG.webp", order: 4 },
+    { file: "2_CROSSPALM_UP_45R_IMG.webp", order: 5 },
+    { file: "2_CROSSPALM_UP_90R_IMG.webp", order: 6 },
+    { file: "2_CROSSPALM_UP_135R_IMG.webp", order: 7 }
   ],
   // Cross – Closed Palm sequences (five directions)
   CROSSCLOSEDBACKWARD: [
-    { file: "2_CROSSFIST_BACKWARD_0_IMG.svg", order: 1 },
-    { file: "2_CROSSFIST_BACKWARD_45L_IMG.svg", order: 2 },
-    { file: "2_CROSSFIST_BACKWARD_90L_IMG.svg", order: 3 },
-    { file: "2_CROSSFIST_BACKWARD_135L_IMG.svg", order: 4 },
-    { file: "2_CROSSFIST_BACKWARD_45R_IMG.svg", order: 5 },
-    { file: "2_CROSSFIST_BACKWARD_90R_IMG.svg", order: 6 },
-    { file: "2_CROSSFIST_BACKWARD_135R_IMG.svg", order: 7 }
+    { file: "2_CROSSFIST_BACKWARD_0_IMG.webp", order: 1 },
+    { file: "2_CROSSFIST_BACKWARD_45L_IMG.webp", order: 2 },
+    { file: "2_CROSSFIST_BACKWARD_90L_IMG.webp", order: 3 },
+    { file: "2_CROSSFIST_BACKWARD_135L_IMG.webp", order: 4 },
+    { file: "2_CROSSFIST_BACKWARD_45R_IMG.webp", order: 5 },
+    { file: "2_CROSSFIST_BACKWARD_90R_IMG.webp", order: 6 },
+    { file: "2_CROSSFIST_BACKWARD_135R_IMG.webp", order: 7 }
   ],
   CROSSCLOSEDDOWN: [
-    { file: "2_CROSSFIST_DOWN_0_IMG.svg", order: 1 },
-    { file: "2_CROSSFIST_DOWN_45L_IMG.svg", order: 2 },
-    { file: "2_CROSSFIST_DOWN_90L_IMG.svg", order: 3 },
-    { file: "2_CROSSFIST_DOWN_135L_IMG.svg", order: 4 },
-    { file: "2_CROSSFIST_DOWN_45R_IMG.svg", order: 5 },
-    { file: "2_CROSSFIST_DOWN_90R_IMG.svg", order: 6 },
-    { file: "2_CROSSFIST_DOWN_135R_IMG.svg", order: 7 }
+    { file: "2_CROSSFIST_DOWN_0_IMG.webp", order: 1 },
+    { file: "2_CROSSFIST_DOWN_45L_IMG.webp", order: 2 },
+    { file: "2_CROSSFIST_DOWN_90L_IMG.webp", order: 3 },
+    { file: "2_CROSSFIST_DOWN_135L_IMG.webp", order: 4 },
+    { file: "2_CROSSFIST_DOWN_45R_IMG.webp", order: 5 },
+    { file: "2_CROSSFIST_DOWN_90R_IMG.webp", order: 6 },
+    { file: "2_CROSSFIST_DOWN_135R_IMG.webp", order: 7 }
   ],
   CROSSCLOSEDFORWARD: [
-    { file: "2_CROSSFIST_FORWARD_0_IMG.svg", order: 1 },
-    { file: "2_CROSSFIST_FORWARD_45L_IMG.svg", order: 2 },
-    { file: "2_CROSSFIST_FORWARD_90L_IMG.svg", order: 3 },
-    { file: "2_CROSSFIST_FORWARD_135L_IMG.svg", order: 4 },
-    { file: "2_CROSSFIST_FORWARD_45R_IMG.svg", order: 5 },
-    { file: "2_CROSSFIST_FORWARD_90R_IMG.svg", order: 6 },
-    { file: "2_CROSSFIST_FORWARD_135R_IMG.svg", order: 7 }
+    { file: "2_CROSSFIST_FORWARD_0_IMG.webp", order: 1 },
+    { file: "2_CROSSFIST_FORWARD_45L_IMG.webp", order: 2 },
+    { file: "2_CROSSFIST_FORWARD_90L_IMG.webp", order: 3 },
+    { file: "2_CROSSFIST_FORWARD_135L_IMG.webp", order: 4 },
+    { file: "2_CROSSFIST_FORWARD_45R_IMG.webp", order: 5 },
+    { file: "2_CROSSFIST_FORWARD_90R_IMG.webp", order: 6 },
+    { file: "2_CROSSFIST_FORWARD_135R_IMG.webp", order: 7 }
   ],
   CROSSCLOSEDREVERSE: [
-    { file: "2_CROSSFIST_REVERSE_0_IMG.svg", order: 1 },
-    { file: "2_CROSSFIST_REVERSE_45L_IMG.svg", order: 2 },
-    { file: "2_CROSSFIST_REVERSE_90L_IMG.svg", order: 3 },
-    { file: "2_CROSSFIST_REVERSE_135L_IMG.svg", order: 4 },
-    { file: "2_CROSSFIST_REVERSE_45R_IMG.svg", order: 5 },
-    { file: "2_CROSSFIST_REVERSE_90R_IMG.svg", order: 6 },
-    { file: "2_CROSSFIST_REVERSE_135R_IMG.svg", order: 7 }
+    { file: "2_CROSSFIST_REVERSE_0_IMG.webp", order: 1 },
+    { file: "2_CROSSFIST_REVERSE_45L_IMG.webp", order: 2 },
+    { file: "2_CROSSFIST_REVERSE_90L_IMG.webp", order: 3 },
+    { file: "2_CROSSFIST_REVERSE_135L_IMG.webp", order: 4 },
+    { file: "2_CROSSFIST_REVERSE_45R_IMG.webp", order: 5 },
+    { file: "2_CROSSFIST_REVERSE_90R_IMG.webp", order: 6 },
+    { file: "2_CROSSFIST_REVERSE_135R_IMG.webp", order: 7 }
   ],
   CROSSCLOSEDUP: [
-    { file: "2_CROSSFIST_UP_0_IMG.svg", order: 1 },
-    { file: "2_CROSSFIST_UP_45L_IMG.svg", order: 2 },
-    { file: "2_CROSSFIST_UP_90L_IMG.svg", order: 3 },
-    { file: "2_CROSSFIST_UP_135L_IMG.svg", order: 4 },
-    { file: "2_CROSSFIST_UP_45R_IMG.svg", order: 5 },
-    { file: "2_CROSSFIST_UP_90R_IMG.svg", order: 6 },
-    { file: "2_CROSSFIST_UP_135R_IMG.svg", order: 7 }
+    { file: "2_CROSSFIST_UP_0_IMG.webp", order: 1 },
+    { file: "2_CROSSFIST_UP_45L_IMG.webp", order: 2 },
+    { file: "2_CROSSFIST_UP_90L_IMG.webp", order: 3 },
+    { file: "2_CROSSFIST_UP_135L_IMG.webp", order: 4 },
+    { file: "2_CROSSFIST_UP_45R_IMG.webp", order: 5 },
+    { file: "2_CROSSFIST_UP_90R_IMG.webp", order: 6 },
+    { file: "2_CROSSFIST_UP_135R_IMG.webp", order: 7 }
   ]
 };
 
@@ -230,7 +230,7 @@ function prettyRoutineName(key) {
 // where the key already describes the direction, we omit additional text.
 function movementLabelFromFile(key, file) {
   // If the key is not a cross routine, derive from file name by splitting on underscores.
-  const base = file.replace(".svg", "");
+  const base = file.replace(/\.(svg|webp)$/, "");
   const parts = base.split("_");
   // parts[1] will be e.g. PALMOPEN, HEARTOPEN, etc.  parts[2] is variation (e.g. UP, DOWN).
   const category = parts[1] || key;
@@ -384,6 +384,19 @@ function handleRoutineSelected(key) {
   switchScreen("screen-prefs");
 }
 
+// Main bar: current move (green) or rest (blue). Thin bar: whole routine.
+let phaseBar = null;
+
+// Whole routine = every move in every round, plus a rest between moves (none after the last)
+function routineTotalSeconds() {
+  const steps = selectedRoutineMovements.length * prefs.rounds;
+  return steps * prefs.secondsPerMovement + Math.max(0, steps - 1) * prefs.restBetween;
+}
+
+function isLastStep() {
+  return currentMovementIndex >= selectedRoutineMovements.length - 1 && currentRound >= prefs.rounds;
+}
+
 function startRoutine() {
   stopRoutineTimers();
   // Set initial state
@@ -392,6 +405,10 @@ function startRoutine() {
   isRunning = true;
   qs("#btn-play-pause").textContent = "Pause";
   qs("#status-message").textContent = "";
+  if (phaseBar) {
+    phaseBar.reset();
+    phaseBar.setTotal(routineTotalSeconds());
+  }
   // Start time tracking
   if (window.timeTracker) {
     window.timeTracker.startSession('Upper Body Innervation', selectedRoutineKey);
@@ -406,9 +423,15 @@ function stopRoutineTimers() {
   }
 }
 
-function startPhase(phase) {
+// With resume = true, carry on with the time that was left
+function startPhase(phase, resume = false) {
   currentPhase = phase;
-  secondsRemaining = (phase === "move") ? prefs.secondsPerMovement : prefs.restBetween;
+  if (resume) {
+    if (phaseBar) phaseBar.resume();
+  } else {
+    secondsRemaining = (phase === "move") ? prefs.secondsPerMovement : prefs.restBetween;
+    if (phaseBar) phaseBar.startPhase(phase, secondsRemaining);
+  }
   updateMovementUI();
   if (movementTimerId) clearInterval(movementTimerId);
   if (!isRunning) return;
@@ -439,7 +462,7 @@ function handlePhaseComplete() {
     }
   }
 
-  if (currentPhase === "move" && prefs.restBetween > 0) {
+  if (currentPhase === "move" && prefs.restBetween > 0 && !isLastStep()) {
     playDing();
     startPhase("rest");
   } else {
@@ -464,6 +487,8 @@ function advanceMovement() {
 function finishRoutine() {
   isRunning = false;
   stopRoutineTimers();
+  currentPhase = "idle";
+  if (phaseBar) phaseBar.finish();
   qs("#btn-play-pause").textContent = "Restart";
   qs("#phase-label").textContent = "Complete";
   qs("#status-message").textContent = "Routine complete.";
@@ -491,15 +516,6 @@ function updateMovementUI() {
   qs("#round-count").textContent = `Round ${currentRound} of ${prefs.rounds}`;
   // Time tracking happens when movement completes, not here
   updatePhaseLabel();
-  // Reset progress bar and animate for next movement
-  const bar = qs("#prog");
-  bar.style.transition = "none";
-  bar.style.width = currentPhase === "move" ? "0%" : "100%";
-  // Next tick: animate to full or empty
-  setTimeout(() => {
-    bar.style.transition = `width ${prefs.secondsPerMovement}s linear`;
-    bar.style.width = currentPhase === "move" ? "100%" : "0%";
-  }, 50);
 }
 
 function updatePhaseLabel() {
@@ -524,10 +540,12 @@ function togglePlayPause() {
     isRunning = false;
     stopRoutineTimers();
     qs("#btn-play-pause").textContent = "Resume";
+    if (phaseBar) phaseBar.pause();
   } else {
     isRunning = true;
     qs("#btn-play-pause").textContent = "Pause";
-    startPhase(currentPhase || "move");
+    // Continue the current phase from where it was paused
+    startPhase(currentPhase || "move", true);
   }
 }
 
@@ -546,6 +564,7 @@ function initBackButtons() {
       isRunning = false;
       qs("#btn-play-pause").textContent = "Start";
       currentPhase = "idle";
+      if (phaseBar) phaseBar.reset();
       qs("#phase-label").textContent = "Ready";
       switchScreen(target);
     });
@@ -555,6 +574,7 @@ function initBackButtons() {
 document.addEventListener("DOMContentLoaded", () => {
   // Initialize lazy image loader
   lazyLoader = new LazyImageLoader({ rootMargin: '100px' });
+  phaseBar = new PhaseBar(document.getElementById("prog"));
 
   renderRoutineCards();
   initBackButtons();
@@ -597,6 +617,13 @@ document.addEventListener("DOMContentLoaded", () => {
   // Start routine button
   const startBtn = qs("#btn-start-routine");
   startBtn.addEventListener("click", () => {
+    // Read the fields at start so typed values count even without leaving the field (0 rest is allowed)
+    const sec = parseInt(secInput.value, 10);
+    const rest = parseInt(restInput.value, 10);
+    const rounds = parseInt(roundsInput.value, 10);
+    prefs.secondsPerMovement = isNaN(sec) ? 45 : Math.max(5, sec);
+    prefs.restBetween = isNaN(rest) ? 3 : Math.max(0, rest);
+    prefs.rounds = isNaN(rounds) ? 2 : Math.max(1, rounds);
     startRoutine();
     switchScreen("screen-player");
   });

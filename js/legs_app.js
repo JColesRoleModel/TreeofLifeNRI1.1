@@ -13,45 +13,45 @@ const IMAGE_BASE_PATH = "InnervationSVGs/";
 // order ensures movements are presented in the correct sequence.  Do not change file names.
 const ROUTINES = {
   FEET: [
-    { file: "1_FEET_MIDCROSSRIGHT_D_IMG.svg", order: 1 },
-    { file: "1_FEET_MIDCROSSLEFT_D_IMG.svg", order: 2 },
-    { file: "1_FEET_SIDECROSSRIGHT_D_IMG.svg", order: 3 },
-    { file: "1_FEET_SIDECROSSLEFT_D_IMG.svg", order: 4 },
-    { file: "1_FEET_BACKRIGHT_D_IMG.svg", order: 5 },
-    { file: "1_FEET_BACKLEFT_D_IMG.svg", order: 6 },
-    { file: "1_FEET_OUTRIGHT_D_IMG.svg", order: 7 },
-    { file: "1_FEET_OUTLEFT_D_IMG.svg", order: 8 }
+    { file: "1_FEET_MIDCROSSRIGHT_D_IMG.webp", order: 1 },
+    { file: "1_FEET_MIDCROSSLEFT_D_IMG.webp", order: 2 },
+    { file: "1_FEET_SIDECROSSRIGHT_D_IMG.webp", order: 3 },
+    { file: "1_FEET_SIDECROSSLEFT_D_IMG.webp", order: 4 },
+    { file: "1_FEET_BACKRIGHT_D_IMG.webp", order: 5 },
+    { file: "1_FEET_BACKLEFT_D_IMG.webp", order: 6 },
+    { file: "1_FEET_OUTRIGHT_D_IMG.webp", order: 7 },
+    { file: "1_FEET_OUTLEFT_D_IMG.webp", order: 8 }
   ],
   GROUNDING: [
-    { file: "1_GROUNDING_FORWARD_D_IMG.svg", order: 1 },
-    { file: "1_GROUNDING_OUT_D_IMG.svg", order: 2 },
-    { file: "1_GROUNDING_IN_D_IMG.svg", order: 3 },
-    { file: "1_GROUNDING_CROSSLEFT_D_IMG.svg", order: 4 },
-    { file: "1_GROUNDING_CROSSRIGHT_D_IMG.svg", order: 5 }
+    { file: "1_GROUNDING_FORWARD_D_IMG.webp", order: 1 },
+    { file: "1_GROUNDING_OUT_D_IMG.webp", order: 2 },
+    { file: "1_GROUNDING_IN_D_IMG.webp", order: 3 },
+    { file: "1_GROUNDING_CROSSLEFT_D_IMG.webp", order: 4 },
+    { file: "1_GROUNDING_CROSSRIGHT_D_IMG.webp", order: 5 }
   ],
   HIPS1: [
-    { file: "1_HIPS1_LEFTFRONTIN_D_IMG.svg", order: 1 },
-    { file: "1_HIPS1_LEFTFRONTOUT_D_IMG.svg", order: 2 },
-    { file: "1_HIPS1_LEFTMIDIN_D_IMG.svg", order: 3 },
-    { file: "1_HIPS1_LEFTMIDOUT_D_IMG.svg", order: 4 },
-    { file: "1_HIPS1_LEFTREARIN_D_IMG.svg", order: 5 },
-    { file: "1_HIPS1_LEFTREAROUT_D_IMG.svg", order: 6 },
-    { file: "1_HIPS1_RIGHTFRONTIN_D_IMG.svg", order: 7 },
-    { file: "1_HIPS1_RIGHTFRONTOUT_D_IMG.svg", order: 8 },
-    { file: "1_HIPS1_RIGHTMIDIN_D_IMG.svg", order: 9 },
-    { file: "1_HIPS1_RIGHTMIDOUT_D_IMG.svg", order: 10 },
-    { file: "1_HIPS1_RIGHTREARIN_D_IMG.svg", order: 11 },
-    { file: "1_HIPS1_RIGHTREAROUT_D_IMG.svg", order: 12 }
+    { file: "1_HIPS1_LEFTFRONTIN_D_IMG.webp", order: 1 },
+    { file: "1_HIPS1_LEFTFRONTOUT_D_IMG.webp", order: 2 },
+    { file: "1_HIPS1_LEFTMIDIN_D_IMG.webp", order: 3 },
+    { file: "1_HIPS1_LEFTMIDOUT_D_IMG.webp", order: 4 },
+    { file: "1_HIPS1_LEFTREARIN_D_IMG.webp", order: 5 },
+    { file: "1_HIPS1_LEFTREAROUT_D_IMG.webp", order: 6 },
+    { file: "1_HIPS1_RIGHTFRONTIN_D_IMG.webp", order: 7 },
+    { file: "1_HIPS1_RIGHTFRONTOUT_D_IMG.webp", order: 8 },
+    { file: "1_HIPS1_RIGHTMIDIN_D_IMG.webp", order: 9 },
+    { file: "1_HIPS1_RIGHTMIDOUT_D_IMG.webp", order: 10 },
+    { file: "1_HIPS1_RIGHTREARIN_D_IMG.webp", order: 11 },
+    { file: "1_HIPS1_RIGHTREAROUT_D_IMG.webp", order: 12 }
   ],
   HIPS2: [
-    { file: "1_HIPS2_PLANKOPPOSITELEFTFRONT_D_IMG.svg", order: 1 },
-    { file: "1_HIPS2_PLANKSAMELEFTFRONT_D_IMG.svg", order: 2 },
-    { file: "1_HIPS2_PLANKSAMERIGHTFRONT_D_IMG.svg", order: 3 },
-    { file: "1_HIPS2_PLANKOPPOSITERIGHTFRONT_D_IMG.svg", order: 4 },
-    { file: "1_HIPS2_STAGGEROPPOSITERIGHTFRONT_D_IMG.svg", order: 5 },
-    { file: "1_HIPS2_STAGGEROPPOSITELEFTFRONT_D_IMG.svg", order: 6 },
-    { file: "1_HIPS2_STAGGERSAMELEFTFRONT_D_IMG.svg", order: 7 },
-    { file: "1_HIPS2_STAGGERSAMERIGHTFRONT_D_IMG.svg", order: 8 }
+    { file: "1_HIPS2_PLANKOPPOSITELEFTFRONT_D_IMG.webp", order: 1 },
+    { file: "1_HIPS2_PLANKSAMELEFTFRONT_D_IMG.webp", order: 2 },
+    { file: "1_HIPS2_PLANKSAMERIGHTFRONT_D_IMG.webp", order: 3 },
+    { file: "1_HIPS2_PLANKOPPOSITERIGHTFRONT_D_IMG.webp", order: 4 },
+    { file: "1_HIPS2_STAGGEROPPOSITERIGHTFRONT_D_IMG.webp", order: 5 },
+    { file: "1_HIPS2_STAGGEROPPOSITELEFTFRONT_D_IMG.webp", order: 6 },
+    { file: "1_HIPS2_STAGGERSAMELEFTFRONT_D_IMG.webp", order: 7 },
+    { file: "1_HIPS2_STAGGERSAMERIGHTFRONT_D_IMG.webp", order: 8 }
   ]
 };
 
@@ -112,7 +112,7 @@ function prettyRoutineName(key) {
 
 // Derive human-friendly movement label from filename
 function movementLabelFromFile(key, file) {
-  const base = file.replace(".svg", "");
+  const base = file.replace(/\.(svg|webp)$/, "");
   const parts = base.split("_");
   const routinePart = parts[1] || key;
   const movePart = parts[2] || "";
@@ -322,28 +322,17 @@ function setupPlayerUI() {
 // -------------------------
 // Progress bar animation logic
 // -------------------------
-const bar = document.getElementById("prog");
-// Direction flag: true = fill to 100%, false = empty to 0%
-let barDirectionForward = true;
+// Main bar: current move (green) or transition (blue). Thin bar: whole routine.
+let phaseBar = null;
 
-function animateProgressBarForMovement(seconds) {
-  if (!bar) return;
-  // Set transition duration for this movement
-  bar.style.transition = `width ${seconds}s linear`;
-  if (barDirectionForward) {
-    bar.style.width = "100%";
-  } else {
-    bar.style.width = "0%";
-  }
-  // Flip direction for the next movement
-  barDirectionForward = !barDirectionForward;
+// Whole routine = every move in every round, plus a transition between moves (none after the last)
+function routineTotalSeconds() {
+  const steps = selectedRoutineMovements.length * prefs.rounds;
+  return steps * prefs.secondsPerMovement + Math.max(0, steps - 1) * prefs.restBetween;
 }
 
-function resetProgressBarInstant() {
-  if (!bar) return;
-  bar.style.transition = "none";
-  // Immediately jump to starting position for current direction
-  bar.style.width = barDirectionForward ? "0%" : "100%";
+function isLastStep() {
+  return currentMovementIndex >= selectedRoutineMovements.length - 1 && currentRound >= prefs.rounds;
 }
 
 // -------------------------
@@ -357,9 +346,10 @@ function startRoutine() {
   isRunning = true;
   qs("#btn-play-pause").textContent = "Pause";
   qs("#status-message").textContent = "";
-  // Reset bar state
-  barDirectionForward = true;
-  resetProgressBarInstant();
+  if (phaseBar) {
+    phaseBar.reset();
+    phaseBar.setTotal(routineTotalSeconds());
+  }
   // Start time tracking
   if (window.timeTracker) {
     window.timeTracker.startSession('Lower Body Innervation', selectedRoutineKey);
@@ -375,24 +365,14 @@ function stopRoutineTimers() {
   }
 }
 
-// Start a phase: 'move' or 'rest'
-function startPhase(phase) {
+// Start a phase: 'move' or 'rest'. With resume = true, carry on with the time that was left.
+function startPhase(phase, resume = false) {
   currentPhase = phase;
-  if (phase === "move") {
-    secondsRemaining = prefs.secondsPerMovement;
-    // Reset progress bar instantly and then animate for this movement
-    resetProgressBarInstant();
-    // Use requestAnimationFrame to ensure the reset happens before the transition
-    requestAnimationFrame(() => {
-      animateProgressBarForMovement(prefs.secondsPerMovement);
-    });
+  if (resume) {
+    if (phaseBar) phaseBar.resume();
   } else {
-    // rest phase
-    secondsRemaining = prefs.restBetween;
-    // Freeze progress bar during rest (no animation)
-    if (bar) {
-      bar.style.transition = "none";
-    }
+    secondsRemaining = phase === "move" ? prefs.secondsPerMovement : prefs.restBetween;
+    if (phaseBar) phaseBar.startPhase(phase, secondsRemaining);
   }
   updateMovementUI();
   // Manage timers
@@ -427,7 +407,7 @@ function handlePhaseComplete() {
   }
   // Play ding at the end of every phase
   playDing();
-  if (currentPhase === "move" && prefs.restBetween > 0) {
+  if (currentPhase === "move" && prefs.restBetween > 0 && !isLastStep()) {
     startPhase("rest");
   } else {
     advanceMovement();
@@ -452,6 +432,8 @@ function advanceMovement() {
 function finishRoutine() {
   isRunning = false;
   stopRoutineTimers();
+  currentPhase = "idle";
+  if (phaseBar) phaseBar.finish();
   qs("#btn-play-pause").textContent = "Restart";
   qs("#phase-label").textContent = "Complete";
   qs("#status-message").textContent = "Routine complete. Notice how your lower body feels.";
@@ -511,19 +493,12 @@ function togglePlayPause() {
       movementTimerId = null;
     }
     qs("#btn-play-pause").textContent = "Resume";
-    // Pause progress bar by freezing transition
-    if (bar) {
-      bar.style.transition = "none";
-    }
+    if (phaseBar) phaseBar.pause();
   } else {
     isRunning = true;
     qs("#btn-play-pause").textContent = "Pause";
-    // Continue the current phase
-    if (currentPhase === "move") {
-      // Resume the bar animation for the remaining time
-      animateProgressBarForMovement(secondsRemaining);
-    }
-    startPhase(currentPhase || "move");
+    // Continue the current phase from where it was paused
+    startPhase(currentPhase || "move", true);
   }
 }
 
@@ -545,6 +520,7 @@ function initBackButtons() {
         isRunning = false;
         qs("#btn-play-pause").textContent = "Start";
         currentPhase = "idle";
+        if (phaseBar) phaseBar.reset();
         qs("#phase-label").textContent = "Ready";
       }
       switchScreen(target);
@@ -556,6 +532,7 @@ function initBackButtons() {
 document.addEventListener("DOMContentLoaded", () => {
   // Initialize lazy image loader
   lazyLoader = new LazyImageLoader({ rootMargin: '100px' });
+  phaseBar = new PhaseBar(document.getElementById("prog"));
 
   // If a routine query parameter is present in the URL, automatically load that routine
   const params = new URLSearchParams(window.location.search);

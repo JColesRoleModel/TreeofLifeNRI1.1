@@ -14,7 +14,16 @@
   <!-- Breathwork-specific styles -->
   <link rel="stylesheet" href="css/breathwork.css">
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="assets/logo/tolnrilogo.png">
+  <link rel="icon" type="image/png" href="assets/logo/tolnrilogo.webp">
+  <!-- Installable app (PWA) -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#0F0F0F">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="ToL NRI">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/logo/icon-180.png">
+  <script>if ('serviceWorker' in navigator) navigator.serviceWorker.register('./sw.js');</script>
 </head>
 
 <body>
@@ -27,7 +36,7 @@
           <div class="presented-name">Brian O'Kelly</div>
         </div>
         <a href="index.html" class="brand-logo-link">
-          <img src="assets/logo/tolnrilogo.png" alt="Tree of Life logo" class="brand-logo-image">
+          <img src="assets/logo/tolnrilogo.webp" alt="Tree of Life logo" class="brand-logo-image">
         </a>
         <div class="brand-text">
           <div class="brand-title">TREE OF LIFE</div>
@@ -65,7 +74,7 @@
           <div class="breath-branding">
             <button class="brand-item active" data-pattern="alternate" type="button">
               <div class="brand-icon">
-                <img src="assets/breath/alternate.png" alt="Alternate icon">
+                <img src="assets/breath/alternate.webp" alt="Alternate icon">
               </div>
               <div class="brand-labels">
                 <span class="brand-label-main">Alternate</span>
@@ -75,7 +84,7 @@
 
             <button class="brand-item" data-pattern="solar" type="button">
               <div class="brand-icon">
-                <img src="assets/breath/solar.png" alt="Solar icon">
+                <img src="assets/breath/solar.webp" alt="Solar icon">
               </div>
               <div class="brand-labels">
                 <span class="brand-label-main">Solar</span>
@@ -85,7 +94,7 @@
 
             <button class="brand-item" data-pattern="lunar" type="button">
               <div class="brand-icon">
-                <img src="assets/breath/lunar.png" alt="Lunar icon">
+                <img src="assets/breath/lunar.webp" alt="Lunar icon">
               </div>
               <div class="brand-labels">
                 <span class="brand-label-main">Lunar</span>
@@ -95,7 +104,7 @@
 
             <button class="brand-item" data-pattern="cyclical" type="button">
               <div class="brand-icon">
-                <img src="assets/breath/cyclical.png" alt="Cyclical icon">
+                <img src="assets/breath/cyclical.webp" alt="Cyclical icon">
               </div>
               <div class="brand-labels">
                 <span class="brand-label-main">Cyclical</span>

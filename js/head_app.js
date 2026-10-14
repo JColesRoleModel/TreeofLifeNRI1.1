@@ -8,83 +8,83 @@ const IMAGE_BASE_PATH = "InnervationSVGs/";
 // Each key is a routine; each entry has file + order for sequence.
 const ROUTINES = {
   CHINBOTTOM: [
-    { file: "3_CHINBOTTOM_0_D_IMG.svg", order: 1 },
-    { file: "3_CHINBOTTOM_L_D_IMG.svg", order: 2 },
-    { file: "3_CHINBOTTOM_R_D_IMG.svg", order: 3 },
-    { file: "3_CHINBOTTOM_1_D_IMG.svg", order: 4 },
-    { file: "3_CHINBOTTOM_2_D_IMG.svg", order: 5 },
-    { file: "3_CHINBOTTOM_3_D_IMG.svg", order: 6 },
-    { file: "3_CHINBOTTOM_4_D_IMG.svg", order: 7 },
-    { file: "3_CHINBOTTOM_5_D_IMG.svg", order: 8 },
-    { file: "3_CHINBOTTOM_6_D_IMG.svg", order: 9 },
-    { file: "3_CHINBOTTOM_7_D_IMG.svg", order: 10 },
-    { file: "3_CHINBOTTOM_8_D_IMG.svg", order: 11 }
+    { file: "3_CHINBOTTOM_0_D_IMG.webp", order: 1 },
+    { file: "3_CHINBOTTOM_L_D_IMG.webp", order: 2 },
+    { file: "3_CHINBOTTOM_R_D_IMG.webp", order: 3 },
+    { file: "3_CHINBOTTOM_1_D_IMG.webp", order: 4 },
+    { file: "3_CHINBOTTOM_2_D_IMG.webp", order: 5 },
+    { file: "3_CHINBOTTOM_3_D_IMG.webp", order: 6 },
+    { file: "3_CHINBOTTOM_4_D_IMG.webp", order: 7 },
+    { file: "3_CHINBOTTOM_5_D_IMG.webp", order: 8 },
+    { file: "3_CHINBOTTOM_6_D_IMG.webp", order: 9 },
+    { file: "3_CHINBOTTOM_7_D_IMG.webp", order: 10 },
+    { file: "3_CHINBOTTOM_8_D_IMG.webp", order: 11 }
   ],
   CHINTOP: [
-    { file: "3_CHINTOP_0_D_IMG.svg", order: 1 },
-    { file: "3_CHINTOP_L_D_IMG.svg", order: 2 },
-    { file: "3_CHINTOP_R_D_IMG.svg", order: 3 },
-    { file: "3_CHINTOP_1_D_IMG.svg", order: 4 },
-    { file: "3_CHINTOP_2_D_IMG.svg", order: 5 },
-    { file: "3_CHINTOP_3_D_IMG.svg", order: 6 },
-    { file: "3_CHINTOP_4_D_IMG.svg", order: 7 },
-    { file: "3_CHINTOP_5_D_IMG.svg", order: 8 },
-    { file: "3_CHINTOP_6_D_IMG.svg", order: 9 },
-    { file: "3_CHINTOP_7_D_IMG.svg", order: 10 },
-    { file: "3_CHINTOP_8_D_IMG.svg", order: 11 }
+    { file: "3_CHINTOP_0_D_IMG.webp", order: 1 },
+    { file: "3_CHINTOP_L_D_IMG.webp", order: 2 },
+    { file: "3_CHINTOP_R_D_IMG.webp", order: 3 },
+    { file: "3_CHINTOP_1_D_IMG.webp", order: 4 },
+    { file: "3_CHINTOP_2_D_IMG.webp", order: 5 },
+    { file: "3_CHINTOP_3_D_IMG.webp", order: 6 },
+    { file: "3_CHINTOP_4_D_IMG.webp", order: 7 },
+    { file: "3_CHINTOP_5_D_IMG.webp", order: 8 },
+    { file: "3_CHINTOP_6_D_IMG.webp", order: 9 },
+    { file: "3_CHINTOP_7_D_IMG.webp", order: 10 },
+    { file: "3_CHINTOP_8_D_IMG.webp", order: 11 }
   ],
   LION: [
-    { file: "3_LION_0_D_IMG.svg", order: 1 },
-    { file: "3_LION_1_D_IMG.svg", order: 2 },
-    { file: "3_LION_2_D_IMG.svg", order: 3 },
-    { file: "3_LION_3_D_IMG.svg", order: 4 },
-    { file: "3_LION_4_D_IMG.svg", order: 5 },
-    { file: "3_LION_5_D_IMG.svg", order: 6 },
-    { file: "3_LION_6_D_IMG.svg", order: 7 },
-    { file: "3_LION_7_D_IMG.svg", order: 8 },
-    { file: "3_LION_8_D_IMG.svg", order: 9 }
+    { file: "3_LION_0_D_IMG.webp", order: 1 },
+    { file: "3_LION_1_D_IMG.webp", order: 2 },
+    { file: "3_LION_2_D_IMG.webp", order: 3 },
+    { file: "3_LION_3_D_IMG.webp", order: 4 },
+    { file: "3_LION_4_D_IMG.webp", order: 5 },
+    { file: "3_LION_5_D_IMG.webp", order: 6 },
+    { file: "3_LION_6_D_IMG.webp", order: 7 },
+    { file: "3_LION_7_D_IMG.webp", order: 8 },
+    { file: "3_LION_8_D_IMG.webp", order: 9 }
   ],
   LIONLEFT: [
-    { file: "3_LIONLEFT_0_D_IMG.svg", order: 1 },
-    { file: "3_LIONLEFT_1_D_IMG.svg", order: 2 },
-    { file: "3_LIONLEFT_2_D_IMG.svg", order: 3 },
-    { file: "3_LIONLEFT_3_D_IMG.svg", order: 4 },
-    { file: "3_LIONLEFT_4_D_IMG.svg", order: 5 },
-    { file: "3_LIONLEFT_5_D_IMG.svg", order: 6 },
-    { file: "3_LIONLEFT_6_D_IMG.svg", order: 7 },
-    { file: "3_LIONLEFT_7_D_IMG.svg", order: 8 },
-    { file: "3_LIONLEFT_8_D_IMG.svg", order: 9 }
+    { file: "3_LIONLEFT_0_D_IMG.webp", order: 1 },
+    { file: "3_LIONLEFT_1_D_IMG.webp", order: 2 },
+    { file: "3_LIONLEFT_2_D_IMG.webp", order: 3 },
+    { file: "3_LIONLEFT_3_D_IMG.webp", order: 4 },
+    { file: "3_LIONLEFT_4_D_IMG.webp", order: 5 },
+    { file: "3_LIONLEFT_5_D_IMG.webp", order: 6 },
+    { file: "3_LIONLEFT_6_D_IMG.webp", order: 7 },
+    { file: "3_LIONLEFT_7_D_IMG.webp", order: 8 },
+    { file: "3_LIONLEFT_8_D_IMG.webp", order: 9 }
   ],
   LIONRIGHT: [
-    { file: "3_LIONRIGHT_0_D_IMG.svg", order: 1 },
-    { file: "3_LIONRIGHT_1_D_IMG.svg", order: 2 },
-    { file: "3_LIONRIGHT_2_D_IMG.svg", order: 3 },
-    { file: "3_LIONRIGHT_3_D_IMG.svg", order: 4 },
-    { file: "3_LIONRIGHT_4_D_IMG.svg", order: 5 },
-    { file: "3_LIONRIGHT_5_D_IMG.svg", order: 6 },
-    { file: "3_LIONRIGHT_6_D_IMG.svg", order: 7 },
-    { file: "3_LIONRIGHT_7_D_IMG.svg", order: 8 },
-    { file: "3_LIONRIGHT_8_D_IMG.svg", order: 9 }
+    { file: "3_LIONRIGHT_0_D_IMG.webp", order: 1 },
+    { file: "3_LIONRIGHT_1_D_IMG.webp", order: 2 },
+    { file: "3_LIONRIGHT_2_D_IMG.webp", order: 3 },
+    { file: "3_LIONRIGHT_3_D_IMG.webp", order: 4 },
+    { file: "3_LIONRIGHT_4_D_IMG.webp", order: 5 },
+    { file: "3_LIONRIGHT_5_D_IMG.webp", order: 6 },
+    { file: "3_LIONRIGHT_6_D_IMG.webp", order: 7 },
+    { file: "3_LIONRIGHT_7_D_IMG.webp", order: 8 },
+    { file: "3_LIONRIGHT_8_D_IMG.webp", order: 9 }
   ],
   NOSE: [
-    { file: "3_OPENNOSE_CLOSEMOUTH_D_IMG.svg", order: 1 },
-    { file: "3_OPENNOSE_OPENMOUTH_D_IMG.svg", order: 2 },
-    { file: "3_PULLNOSE_MID_D_IMG.svg", order: 3 },
-    { file: "3_PULLNOSE_L_D_IMG.svg", order: 4 },
-    { file: "3_PULLNOSE_R_D_IMG.svg", order: 5 },
-    { file: "3_SCRUNCHNOSE_MID_D_IMG.svg", order: 6 },
-    { file: "3_SCRUNCHNOSE_R_D_IMG.svg", order: 7 },
-    { file: "3_SCRUNCHNOSE_L_D_IMG.svg", order: 8 }
+    { file: "3_OPENNOSE_CLOSEMOUTH_D_IMG.webp", order: 1 },
+    { file: "3_OPENNOSE_OPENMOUTH_D_IMG.webp", order: 2 },
+    { file: "3_PULLNOSE_MID_D_IMG.webp", order: 3 },
+    { file: "3_PULLNOSE_L_D_IMG.webp", order: 4 },
+    { file: "3_PULLNOSE_R_D_IMG.webp", order: 5 },
+    { file: "3_SCRUNCHNOSE_MID_D_IMG.webp", order: 6 },
+    { file: "3_SCRUNCHNOSE_R_D_IMG.webp", order: 7 },
+    { file: "3_SCRUNCHNOSE_L_D_IMG.webp", order: 8 }
   ],
   PULL: [
-    { file: "3_PULLTOP_R_D_IMG.svg", order: 1 },
-    { file: "3_PULLTOP_L_D_IMG.svg", order: 2 },
-    { file: "3_PULLFOREHEAD_R_D_IMG.svg", order: 3 },
-    { file: "3_PULLFOREHEAD_L_D_IMG.svg", order: 4 },
-    { file: "3_PULLJAW_R_D_IMG.svg", order: 5 },
-    { file: "3_PULLJAW_L_D_IMG.svg", order: 6 },
-    { file: "3_PULLEAR_R_D_IMG.svg", order: 7 },
-    { file: "3_PULLEAR_L_D_IMG.svg", order: 8 }
+    { file: "3_PULLTOP_R_D_IMG.webp", order: 1 },
+    { file: "3_PULLTOP_L_D_IMG.webp", order: 2 },
+    { file: "3_PULLFOREHEAD_R_D_IMG.webp", order: 3 },
+    { file: "3_PULLFOREHEAD_L_D_IMG.webp", order: 4 },
+    { file: "3_PULLJAW_R_D_IMG.webp", order: 5 },
+    { file: "3_PULLJAW_L_D_IMG.webp", order: 6 },
+    { file: "3_PULLEAR_R_D_IMG.webp", order: 7 },
+    { file: "3_PULLEAR_L_D_IMG.webp", order: 8 }
   ]
 };
 
@@ -150,7 +150,7 @@ function prettyRoutineName(key) {
 
 // LABEL FROM FILENAME (similar to lower/upper)
 function movementLabelFromFile(key, file) {
-  const base = file.replace(".svg", "");
+  const base = file.replace(/\.(svg|webp)$/, "");
   const parts = base.split("_");
   const routinePart = parts[1] || key;
   const movePart = parts[2] || "";
@@ -372,25 +372,18 @@ function setupPlayerUI() {
   switchScreen("screen-player");
 }
 
-// PROGRESS BAR
-const bar = document.getElementById("prog");
-let barDirectionForward = true;
+// PROGRESS BARS
+// Main bar: current move (green) or rest (blue). Thin bar: whole routine.
+let phaseBar = null;
 
-function animateProgressBarForMovement(seconds) {
-  if (!bar) return;
-  bar.style.transition = `width ${seconds}s linear`;
-  if (barDirectionForward) {
-    bar.style.width = "100%";
-  } else {
-    bar.style.width = "0%";
-  }
-  barDirectionForward = !barDirectionForward;
+// Whole routine = every move in every round, plus a rest between moves (none after the last)
+function routineTotalSeconds() {
+  const steps = selectedRoutineMovements.length * prefs.rounds;
+  return steps * prefs.secondsPerMovement + Math.max(0, steps - 1) * prefs.restBetween;
 }
 
-function resetProgressBarInstant() {
-  if (!bar) return;
-  bar.style.transition = "none";
-  bar.style.width = barDirectionForward ? "0%" : "100%";
+function isLastStep() {
+  return currentMovementIndex >= selectedRoutineMovements.length - 1 && currentRound >= prefs.rounds;
 }
 
 // ROUTINE LIFECYCLE
@@ -402,8 +395,10 @@ function startRoutine() {
   isRunning = true;
   qs("#btn-play-pause").textContent = "Pause";
   qs("#status-message").textContent = "";
-  barDirectionForward = true;
-  resetProgressBarInstant();
+  if (phaseBar) {
+    phaseBar.reset();
+    phaseBar.setTotal(routineTotalSeconds());
+  }
   // Start time tracking
   if (window.timeTracker) {
     window.timeTracker.startSession('Head Innervation', selectedRoutineKey);
@@ -418,18 +413,15 @@ function stopRoutineTimers() {
   }
 }
 
-function startPhase(phase) {
+// With resume = true, carry on with the time that was left
+function startPhase(phase, resume = false) {
   currentPhase = phase;
 
-  if (phase === "move") {
-    secondsRemaining = prefs.secondsPerMovement;
-    resetProgressBarInstant();
-    requestAnimationFrame(() => {
-      animateProgressBarForMovement(prefs.secondsPerMovement);
-    });
+  if (resume) {
+    if (phaseBar) phaseBar.resume();
   } else {
-    secondsRemaining = prefs.restBetween;
-    if (bar) bar.style.transition = "none";
+    secondsRemaining = phase === "move" ? prefs.secondsPerMovement : prefs.restBetween;
+    if (phaseBar) phaseBar.startPhase(phase, secondsRemaining);
   }
 
   updateMovementUI();
@@ -465,7 +457,7 @@ function handlePhaseComplete() {
   }
 
   playDing();
-  if (currentPhase === "move" && prefs.restBetween > 0) {
+  if (currentPhase === "move" && prefs.restBetween > 0 && !isLastStep()) {
     startPhase("rest");
   } else {
     advanceMovement();
@@ -488,6 +480,8 @@ function advanceMovement() {
 function finishRoutine() {
   isRunning = false;
   stopRoutineTimers();
+  currentPhase = "idle";
+  if (phaseBar) phaseBar.finish();
   qs("#btn-play-pause").textContent = "Restart";
   qs("#phase-label").textContent = "Complete";
   qs("#status-message").textContent =
@@ -553,14 +547,11 @@ function togglePlayPause() {
       movementTimerId = null;
     }
     qs("#btn-play-pause").textContent = "Resume";
-    if (bar) bar.style.transition = "none";
+    if (phaseBar) phaseBar.pause();
   } else {
     isRunning = true;
     qs("#btn-play-pause").textContent = "Pause";
-    if (currentPhase === "move") {
-      animateProgressBarForMovement(secondsRemaining);
-    }
-    startPhase(currentPhase || "move");
+    startPhase(currentPhase || "move", true);
   }
 }
 
@@ -580,6 +571,7 @@ function initBackButtons() {
         isRunning = false;
         qs("#btn-play-pause").textContent = "Start";
         currentPhase = "idle";
+        if (phaseBar) phaseBar.reset();
         qs("#phase-label").textContent = "Ready";
       }
       switchScreen(target);
@@ -591,6 +583,7 @@ function initBackButtons() {
 document.addEventListener("DOMContentLoaded", () => {
   // Initialize lazy image loader
   lazyLoader = new LazyImageLoader({ rootMargin: '100px' });
+  phaseBar = new PhaseBar(document.getElementById("prog"));
 
   renderRoutineCards();
   initBackButtons();

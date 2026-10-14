@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="css/footer-nav.css">
   <link rel="stylesheet" href="css/completion-modal.css">
   <!-- Favicon for site icon -->
-  <link rel="icon" type="image/png" href="assets/logo/tolnrilogo.png">
+  <link rel="icon" type="image/png" href="assets/logo/tolnrilogo.webp">
   <!-- Inline ocular‑specific styles -->
   <style>
     /* Apply a custom background for the ocular page */
@@ -20,7 +20,7 @@
       /* Use the eyes pattern overlaid by a cosmic indigo tint for depth and legibility */
       background-image:
         linear-gradient(rgba(29, 26, 58, 0.3), rgba(29, 26, 58, 0.3)),
-        url('assets/neuroocular/eyesbackground.png');
+        url('assets/neuroocular/eyesbackground.webp');
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -141,6 +141,15 @@
       margin-top: 12px;
     }
   </style>
+  <!-- Installable app (PWA) -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#0F0F0F">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="ToL NRI">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/logo/icon-180.png">
+  <script>if ('serviceWorker' in navigator) navigator.serviceWorker.register('./sw.js');</script>
 </head>
 
 <body>
@@ -152,7 +161,7 @@
           <div class="presented-name">Brian O'Kelly</div>
         </div>
         <a href="index.html" class="brand-logo-link">
-          <img src="assets/logo/tolnrilogo.png" alt="Tree of Life logo" class="brand-logo-image">
+          <img src="assets/logo/tolnrilogo.webp" alt="Tree of Life logo" class="brand-logo-image">
         </a>
         <div class="brand-text">
           <div class="brand-title">TREE OF LIFE</div>
@@ -464,6 +473,7 @@
   <script src="js/time-tracker.js"></script>
   <script src="js/time-stats-ui.js"></script>
   <script src="js/lazy-loader.js"></script>
+  <script src="js/phase-bar.js"></script>
   <script src="js/menu.js"></script>
   <script src="js/eyes_app.js" defer></script>
   <script src="js/completion-prompt.js"></script>

@@ -13,53 +13,53 @@ const IMAGE_BASE_PATH = "InnervationSVGs/";
 // Do not change the filenames or their order assignments.
 const ROUTINES = {
   FULL: [
-    { file: "9_HEIGHT_C_D_IMG.svg", order: 1 },  // Up
-    { file: "9_WEST_C_D_IMG.svg", order: 2 },  // Left
-    { file: "9_DEPTH_C_D_IMG.svg", order: 3 },  // Down
-    { file: "9_EAST_C_D_IMG.svg", order: 4 },  // Right
-    { file: "9_HEIGHTWEST_C_D_IMG.svg", order: 5 }, // Up‑Left
-    { file: "9_HEIGHTEAST_C_D_IMG.svg", order: 6 }, // Up‑Right
-    { file: "9_DEPTHWEST_C_D_IMG.svg", order: 7 }, // Down‑Left
-    { file: "9_DEPTHEAST_C_D_IMG.svg", order: 8 }, // Down‑Right
-    { file: "9_INWARD_C_D_IMG.svg", order: 9 }   // Inward / Circular
+    { file: "9_HEIGHT_C_D_IMG.webp", order: 1 },  // Up
+    { file: "9_WEST_C_D_IMG.webp", order: 2 },  // Left
+    { file: "9_DEPTH_C_D_IMG.webp", order: 3 },  // Down
+    { file: "9_EAST_C_D_IMG.webp", order: 4 },  // Right
+    { file: "9_HEIGHTWEST_C_D_IMG.webp", order: 5 }, // Up‑Left
+    { file: "9_HEIGHTEAST_C_D_IMG.webp", order: 6 }, // Up‑Right
+    { file: "9_DEPTHWEST_C_D_IMG.webp", order: 7 }, // Down‑Left
+    { file: "9_DEPTHEAST_C_D_IMG.webp", order: 8 }, // Down‑Right
+    { file: "9_INWARD_C_D_IMG.webp", order: 9 }   // Inward / Circular
   ],
   CORE: [
-    { file: "9_HEIGHT_C_D_IMG.svg", order: 1 }, // Up
-    { file: "9_DEPTH_C_D_IMG.svg", order: 2 },  // Down
-    { file: "9_WEST_C_D_IMG.svg", order: 3 },  // Left
-    { file: "9_EAST_C_D_IMG.svg", order: 4 }   // Right
+    { file: "9_HEIGHT_C_D_IMG.webp", order: 1 }, // Up
+    { file: "9_DEPTH_C_D_IMG.webp", order: 2 },  // Down
+    { file: "9_WEST_C_D_IMG.webp", order: 3 },  // Left
+    { file: "9_EAST_C_D_IMG.webp", order: 4 }   // Right
   ],
   DIAGONAL: [
-    { file: "9_HEIGHTWEST_C_D_IMG.svg", order: 1 }, // Up‑Left
-    { file: "9_HEIGHTEAST_C_D_IMG.svg", order: 2 }, // Up‑Right
-    { file: "9_DEPTHWEST_C_D_IMG.svg", order: 3 }, // Down‑Left
-    { file: "9_DEPTHEAST_C_D_IMG.svg", order: 4 }  // Down‑Right
+    { file: "9_HEIGHTWEST_C_D_IMG.webp", order: 1 }, // Up‑Left
+    { file: "9_HEIGHTEAST_C_D_IMG.webp", order: 2 }, // Up‑Right
+    { file: "9_DEPTHWEST_C_D_IMG.webp", order: 3 }, // Down‑Left
+    { file: "9_DEPTHEAST_C_D_IMG.webp", order: 4 }  // Down‑Right
   ],
 
   // Alertness flow: energises the system with vertical and lateral gazes
   ALERT: [
-    { file: "9_HEIGHT_C_D_IMG.svg", order: 1 },      // Up
-    { file: "9_WEST_C_D_IMG.svg", order: 2 },      // Left
-    { file: "9_EAST_C_D_IMG.svg", order: 3 },      // Right
-    { file: "9_HEIGHTEAST_C_D_IMG.svg", order: 4 }, // Up‑Right
-    { file: "9_INWARD_C_D_IMG.svg", order: 5 }       // Circular/inward
+    { file: "9_HEIGHT_C_D_IMG.webp", order: 1 },      // Up
+    { file: "9_WEST_C_D_IMG.webp", order: 2 },      // Left
+    { file: "9_EAST_C_D_IMG.webp", order: 3 },      // Right
+    { file: "9_HEIGHTEAST_C_D_IMG.webp", order: 4 }, // Up‑Right
+    { file: "9_INWARD_C_D_IMG.webp", order: 5 }       // Circular/inward
   ],
 
   // Grounding flow: settles the nervous system with downward and lateral gazes
   GROUND: [
-    { file: "9_DEPTHWEST_C_D_IMG.svg", order: 1 }, // Down‑Left
-    { file: "9_DEPTH_C_D_IMG.svg", order: 2 }, // Down
-    { file: "9_DEPTHEAST_C_D_IMG.svg", order: 3 }, // Down‑Right
-    { file: "9_WEST_C_D_IMG.svg", order: 4 }, // Left
-    { file: "9_INWARD_C_D_IMG.svg", order: 5 }  // Circular/inward
+    { file: "9_DEPTHWEST_C_D_IMG.webp", order: 1 }, // Down‑Left
+    { file: "9_DEPTH_C_D_IMG.webp", order: 2 }, // Down
+    { file: "9_DEPTHEAST_C_D_IMG.webp", order: 3 }, // Down‑Right
+    { file: "9_WEST_C_D_IMG.webp", order: 4 }, // Left
+    { file: "9_INWARD_C_D_IMG.webp", order: 5 }  // Circular/inward
   ],
 
   // Restoring flow: encourages release with downward and circular gazes
   RESTORE: [
-    { file: "9_DEPTHWEST_C_D_IMG.svg", order: 1 }, // Down‑Left
-    { file: "9_DEPTHEAST_C_D_IMG.svg", order: 2 }, // Down‑Right
-    { file: "9_INWARD_C_D_IMG.svg", order: 3 }, // Circular/inward
-    { file: "9_INWARD_C_D_IMG.svg", order: 4 }  // Repeat circular for extended unwinding
+    { file: "9_DEPTHWEST_C_D_IMG.webp", order: 1 }, // Down‑Left
+    { file: "9_DEPTHEAST_C_D_IMG.webp", order: 2 }, // Down‑Right
+    { file: "9_INWARD_C_D_IMG.webp", order: 3 }, // Circular/inward
+    { file: "9_INWARD_C_D_IMG.webp", order: 4 }  // Repeat circular for extended unwinding
   ]
 };
 
@@ -112,20 +112,20 @@ function handleCustomSequence() {
 // display clear gaze directions on the player screen.
 const FILE_TO_LABEL = {
   // Height (vertical): subject looks up → Height
-  "9_HEIGHT_C_D_IMG.svg": "Height (Up) ⬆️",
+  "9_HEIGHT_C_D_IMG.webp": "Height (Up) ⬆️",
   // Depth: subject looks down
-  "9_DEPTH_C_D_IMG.svg": "Depth (Down) ⬇️",
+  "9_DEPTH_C_D_IMG.webp": "Depth (Down) ⬇️",
   // West: subject's right (viewer sees left)
-  "9_WEST_C_D_IMG.svg": "West (Right) ➡️",
+  "9_WEST_C_D_IMG.webp": "West (Right) ➡️",
   // East: subject's left (viewer sees right)
-  "9_EAST_C_D_IMG.svg": "East (Left) ⬅️",
+  "9_EAST_C_D_IMG.webp": "East (Left) ⬅️",
   // Diagonals: combine height/depth with west/east
-  "9_HEIGHTWEST_C_D_IMG.svg": "Height‑West (Up‑Right) ↗️",
-  "9_HEIGHTEAST_C_D_IMG.svg": "Height‑East (Up‑Left) ↖️",
-  "9_DEPTHWEST_C_D_IMG.svg": "Depth‑West (Down‑Right) ↘️",
-  "9_DEPTHEAST_C_D_IMG.svg": "Depth‑East (Down‑Left) ↙️",
+  "9_HEIGHTWEST_C_D_IMG.webp": "Height‑West (Up‑Right) ↗️",
+  "9_HEIGHTEAST_C_D_IMG.webp": "Height‑East (Up‑Left) ↖️",
+  "9_DEPTHWEST_C_D_IMG.webp": "Depth‑West (Down‑Right) ↘️",
+  "9_DEPTHEAST_C_D_IMG.webp": "Depth‑East (Down‑Left) ↙️",
   // Circular/inward tracking
-  "9_INWARD_C_D_IMG.svg": "Inward (Circular) 🎯"
+  "9_INWARD_C_D_IMG.webp": "Inward (Circular) 🎯"
 };
 
 // State variables for managing the sequence and timers
@@ -341,27 +341,18 @@ function setupPlayerUI() {
   switchScreen("screen-player");
 }
 
-// Progress bar elements
-const bar = document.getElementById("prog");
-let barDirectionForward = true;
+// Progress bars
+// Main bar: current gaze (green) or rest (blue). Thin bar: whole sequence.
+let phaseBar = null;
 
-// Animate the bar for a gaze
-function animateProgressBarForMovement(seconds) {
-  if (!bar) return;
-  bar.style.transition = `width ${seconds}s linear`;
-  if (barDirectionForward) {
-    bar.style.width = "100%";
-  } else {
-    bar.style.width = "0%";
-  }
-  barDirectionForward = !barDirectionForward;
+// Whole sequence = every gaze in every round, plus a rest between gazes (none after the last)
+function routineTotalSeconds() {
+  const steps = selectedRoutineMovements.length * prefs.rounds;
+  return steps * prefs.secondsPerMovement + Math.max(0, steps - 1) * prefs.restBetween;
 }
 
-// Instantly reset the bar to the correct starting position
-function resetProgressBarInstant() {
-  if (!bar) return;
-  bar.style.transition = "none";
-  bar.style.width = barDirectionForward ? "0%" : "100%";
+function isLastStep() {
+  return currentMovementIndex >= selectedRoutineMovements.length - 1 && currentRound >= prefs.rounds;
 }
 
 // Begin the sequence
@@ -373,8 +364,10 @@ function startRoutine() {
   isRunning = true;
   qs("#btn-play-pause").textContent = "Pause";
   qs("#status-message").textContent = "";
-  barDirectionForward = true;
-  resetProgressBarInstant();
+  if (phaseBar) {
+    phaseBar.reset();
+    phaseBar.setTotal(routineTotalSeconds());
+  }
   // Start time tracking
   if (window.timeTracker) {
     window.timeTracker.startSession('Neuro-Ocular Activation', selectedRoutineKey);
@@ -390,20 +383,14 @@ function stopRoutineTimers() {
   }
 }
 
-// Start a phase: move or rest
-function startPhase(phase) {
+// Start a phase: move or rest. With resume = true, carry on with the time that was left.
+function startPhase(phase, resume = false) {
   currentPhase = phase;
-  if (phase === "move") {
-    secondsRemaining = prefs.secondsPerMovement;
-    resetProgressBarInstant();
-    requestAnimationFrame(() => {
-      animateProgressBarForMovement(prefs.secondsPerMovement);
-    });
+  if (resume) {
+    if (phaseBar) phaseBar.resume();
   } else {
-    secondsRemaining = prefs.restBetween;
-    if (bar) {
-      bar.style.transition = "none";
-    }
+    secondsRemaining = phase === "move" ? prefs.secondsPerMovement : prefs.restBetween;
+    if (phaseBar) phaseBar.startPhase(phase, secondsRemaining);
   }
   updateMovementUI();
   if (movementTimerId) clearInterval(movementTimerId);
@@ -439,7 +426,7 @@ function handlePhaseComplete() {
     }
   }
 
-  if (currentPhase === "move" && prefs.restBetween > 0) {
+  if (currentPhase === "move" && prefs.restBetween > 0 && !isLastStep()) {
     // Move to rest phase
     startPhase("rest");
   } else {
@@ -466,6 +453,8 @@ function advanceMovement() {
 function finishRoutine() {
   isRunning = false;
   stopRoutineTimers();
+  currentPhase = "idle";
+  if (phaseBar) phaseBar.finish();
   qs("#btn-play-pause").textContent = "Restart";
   qs("#phase-label").textContent = "Complete";
   qs("#status-message").textContent = "Sequence complete. Notice how your vision and mind feel.";
@@ -525,17 +514,12 @@ function togglePlayPause() {
       movementTimerId = null;
     }
     qs("#btn-play-pause").textContent = "Resume";
-    if (bar) {
-      bar.style.transition = "none";
-    }
+    if (phaseBar) phaseBar.pause();
   } else {
     isRunning = true;
     qs("#btn-play-pause").textContent = "Pause";
-    // Continue the bar animation if we are in a move phase
-    if (currentPhase === "move") {
-      animateProgressBarForMovement(secondsRemaining);
-    }
-    startPhase(currentPhase || "move");
+    // Continue the current phase from where it was paused
+    startPhase(currentPhase || "move", true);
   }
 }
 
@@ -556,6 +540,7 @@ function initBackButtons() {
         isRunning = false;
         qs("#btn-play-pause").textContent = "Start";
         currentPhase = "idle";
+        if (phaseBar) phaseBar.reset();
         qs("#phase-label").textContent = "Ready";
       }
       switchScreen(target);
@@ -567,6 +552,7 @@ function initBackButtons() {
 document.addEventListener("DOMContentLoaded", () => {
   // Initialize lazy image loader
   lazyLoader = new LazyImageLoader({ rootMargin: '100px' });
+  phaseBar = new PhaseBar(document.getElementById("prog"));
 
   renderRoutineCards();
   initBackButtons();
