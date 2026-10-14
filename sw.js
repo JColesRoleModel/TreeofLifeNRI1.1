@@ -1,4 +1,4 @@
-const CACHE_NAME = 'tolnri-v1';
+const CACHE_NAME = 'tolnri-v2';
 const PAGES = [
   './',
   './index.html',
